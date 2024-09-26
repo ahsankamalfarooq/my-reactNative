@@ -27,7 +27,7 @@ export default function App() {
    <View className='flex-1 items-center justify-center bg-pink-100'>
       <Text className="text-3xl font-pblack">Open up App.js to start working on your app!</Text>
       <StatusBar style="auto" />
-      <Link href="/profile" style={{color : 'blue'}}> Go to Profile 
+      <Link href="/home" style={{color : 'blue'}}> Go to Home
       </Link>
     </View>
   );
