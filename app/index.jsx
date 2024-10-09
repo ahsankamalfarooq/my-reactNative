@@ -1,24 +1,11 @@
-// import { Link } from 'expo-router';
-// import { StatusBar } from 'expo-status-bar';
-// import {Text, View } from 'react-native';
-
-
-// export default function App() {
-//   return (
-//     <View className="flex-1 items-center justify-center bg-pink-400">
-//       <Text className="text-3xl">Aora!</Text>
-//       <StatusBar style="auto" />
-//       <Link href="/profile" style={{color : 'blue'}}> Go to profile </Link>
-//     </View>
-//   );
-// }
-
-
-
 import React from 'react';
+// import { StatusBar } from 'react-native';
 import { Image, ScrollView, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { images } from '../constants';
+import CustomButton from '../components/CustomButton';
+// import { StatusBar } from 'expo-status-bar';
+import { StatusBar } from 'expo-status-bar';
 
 export default function App() {
   return (
@@ -49,9 +36,19 @@ export default function App() {
                 resizeMode='contain'
               />
           </View>
-
+          <Text className='mt-7 text-sm font-pregular, text-gray-100 text-center'>Where creativity meets innovation:
+            Embark on a Journey of limitless Exploration
+            with Aora
+          </Text>
+          <CustomButton
+            title = 'Continue with Email'
+            handlePress = {() => {}}
+            containerStyles = 'w-full mt-7'
+          />
         </View>
       </ScrollView>
+      <StatusBar backgroundColor='brown'
+        style='light'/>
    </SafeAreaView>    
   );
 }
