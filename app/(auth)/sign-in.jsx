@@ -30,12 +30,12 @@ const SignIn = () => {
             otherStyles = "mt-7"
             keyboardType="email-address"
           />
-          <FormField
+          {/* <FormField
             title="Password"
             Value={form.password}
             handleChangeText={(e) => setForm({...form, password: e})}
             otherStyles = "mt-7"
-          />
+          /> */}
         </View>
       </ScrollView>
     </SafeAreaView>
